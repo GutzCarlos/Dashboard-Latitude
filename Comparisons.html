@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Visualization Dashboard (Latitude)</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles/style_1.css">
+  <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #34495E;">
+        <a class="navbar-brand" href="index.html" >Latitud</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Summary<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Comparisons.html">Comparison</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="MaxTemp.html">Max Temperature</a>
+                <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Data.html" >Data</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box grey">
+                    <h1>Comparison: Latitude vs. X</h1>
+                    <hr>
+                    <p>Click any plot to get in-depth analysis.</p>
+                    <ul>
+                        <li><a href="MaxTemp.html">
+                            <h2>vs. Max Temperature</h2>
+                            <img id="visImg" src="images/Fig1.png" alt="Lat-Temp" width="500">
+                        </a></li>
+                        <li><a href="Humidity.html">
+                            <h2>vs. Humidity</h2>
+                            <img id="visImg" src="images/Fig2.png" alt="Lat-Hum" width="500">
+                        </a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="Cloudiness.html">
+                            <h2>vs. Cloudines</h2>
+                            <img id="visImg" src="images/Fig3.png" alt="Lat-Cloud" width="500">
+                        </a></li>
+                        <li><a href="WindSpeed.html">
+                            <h2>vs. Wind Speed</h2>
+                            <img id="visImg" src="images/Fig4.png" alt="Lat-Wind" width="500">
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+</body>
+</html>

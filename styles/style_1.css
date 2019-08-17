@@ -1,0 +1,141 @@
+body {
+  font-family: 'Architects Daughter';font-size: 16px;
+  background-color: #EAECEE;
+}
+
+.container {
+  position: relative;
+  width: 85%;
+}
+
+
+.container:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1 {
+    color: #2E4053;
+}
+h2{
+  text-align: center;
+}
+a {
+  color: #2E4053;
+}
+.box {
+    margin: 30pt 5pt 10pt 5pt;
+    padding: 10px;
+    color: #1B2631;
+  }
+
+  .grey {
+  /*  background: #D5D8DC;*/
+    background: #ffffff;
+  }
+  
+  div {
+    display: block;
+  }
+
+
+  #sumImage {
+    float: left;
+  }
+
+  p {
+    margin-left: 15px; 
+  }
+
+  #visImg {
+      border-radius: 30%;
+      border-color: #007bff;
+      
+      width: 100%;
+      height: auto;
+    }
+
+   ul {
+      display: flex;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none
+   }
+   li {
+     margin-bottom: 2.5%;
+    }
+
+   * {box-sizing: border-box}
+
+    /* Container needed to position the overlay. Adjust the width as needed */
+    .container2 {
+      position: relative;
+      align-self: center;
+      width: 100%;
+    }
+    
+    /* Make the image to responsive */
+    .image {
+      display: block;
+      width: 50%;
+      height: auto;
+    }
+    
+    /* The overlay effect - lays on top of the container and over the image */
+    .overlay {
+      position: absolute; 
+      bottom: 25%; 
+      background: rgb(0, 0, 0);
+      background: rgba(0, 0, 0, 0.60); /* Black see-through */
+      color: #f1f1f1; 
+      width: 100%;
+      height: 50%;
+      transition: .5s ease;
+      opacity:0;
+      color: white;
+      font-size: 15px;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    /* When you mouse over the container, fade in the overlay title */
+    .container2:hover .overlay {
+      opacity: 1;
+    }
+    .table {
+      font-family: 'Gloria Hallelujah', cursive; font-size: 12px;
+    }
+
+    @media (max-width: 750px) {
+      ul {
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none
+     }
+
+     #visImg {
+      border-radius: 30%;
+      border-color: #007bff
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    }
